@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap");
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: hsl(218, 23%, 16%);
+}
+main {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#advice {
+	background-color: hsl(217, 19%, 24%);
+	max-width: 500px;
+	min-height: 255px;
+	border-radius: 10px;
+	text-align: center;
+	margin: 0px 10px;
+	padding: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.advice--title {
+	font-family: "Manrope", sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 12px;
+	margin-top: 10px;
+	color: hsl(150, 100%, 66%);
+}
+.advice--main {
+	margin-top: 20px;
+	font-family: "Manrope", sans-serif;
+	color: hsl(193, 38%, 86%);
+	font-size: 28px;
+}
+.advice--divider img {
+	width: 400px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.advice--generator button {
+	background-color: hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 100%;
+	padding: 15px;
+	margin-top: -30px;
+	text-align: center;
+	cursor: pointer;
+    transition: all ease 0.5s;
+}
+.advice--generator:hover button {
+    box-shadow: 4px -2px 22px 0px rgba(83,255,170,1);
+    -webkit-box-shadow: 4px -2px 22px 0px rgba(83,255,170,1);
+    -moz-box-shadow: 4px -2px 22px 0px rgba(83,255,170,1);
+    transition: all ease 0.5s;
+}
+.advice--generator button img {
+	width: 25px;
+}
+
+footer{
+    background-color: hsl(217, 19%, 24%);
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+    padding: 15px;
+    letter-spacing: 1px;
+}
+.attribution a{
+    text-decoration: none;
+    color: hsl(150, 100%, 66%);
+    transition: all ease 0.5s;
+}
+.attribution a:hover{
+    color: hsl(217, 19%, 38%);
+    transition: all ease 0.5s;
+}
+@media(max-width: 450px){
+    .advice--divider img {
+        width: 270px;
+    }
+}
+@media(max-width: 330px){
+    .advice--divider img {
+        width: 250px;
+    }
+}
